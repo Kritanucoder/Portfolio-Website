@@ -403,6 +403,8 @@ body {
 .skills {
     padding: 100px 0;
     background: #f8fafc;
+    position: relative;
+    overflow: visible;
 }
 
 .skills-grid {
@@ -424,28 +426,81 @@ body {
     font-size: 1.3rem;
 }
 
-.skill-tags {
+.skill-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
-.skill-tag {
-    background: #e0e7ff;
-    color: #3730a3;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 500;
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor: pointer;
+    position: relative;
 }
 
-.skill-tag:hover {
-    background: #2563eb;
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.skill-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon::after {
+    content: attr(title);
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1f2937;
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+.skill-icon::before {
+    content: '';
+    position: absolute;
+    top: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #1f2937;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.skill-icon:hover::after,
+.skill-icon:hover::before {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Achievements Section */
