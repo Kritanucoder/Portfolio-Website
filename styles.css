@@ -707,56 +707,227 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: #1f2937;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1f2937 50%, #0f172a 100%);
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact .section-title {
     color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.contact .section-title::after {
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.contact-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #cbd5e1;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.location-icon {
+    width: 20px;
+    height: 20px;
+    color: #60a5fa;
 }
 
 .contact-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover::before {
+    transform: scaleX(1);
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+.contact-item-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
 }
 
-.contact-item svg {
-    color: #2563eb;
+.contact-item:hover .contact-item-icon {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.4);
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 1rem;
-    border: none;
-    border-radius: 10px;
-    background: #374151;
+.contact-item-icon svg {
+    width: 24px;
+    height: 24px;
     color: white;
-    font-family: inherit;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #9ca3af;
+.contact-item-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
+.contact-item-text {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    word-break: break-all;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-buttons .btn {
+    min-width: 160px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-buttons .btn-primary {
+    background: linear-gradient(135deg, #10b981, #059669);
+    border: none;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.contact-buttons .btn-primary:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
+}
+
+.contact-buttons .btn-secondary {
+    background: transparent;
+    border: 2px solid #60a5fa;
+    color: #60a5fa;
+    box-shadow: 0 8px 20px rgba(96, 165, 250, 0.2);
+}
+
+.contact-buttons .btn-secondary:hover {
+    background: #60a5fa;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(96, 165, 250, 0.4);
+}
+
+.contact-cta {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.contact-cta h3 {
+    color: #60a5fa;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-cta p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
@@ -858,9 +1029,19 @@ body {
         left: -2.5rem !important;
     }
     
-    .contact-content {
+    .contact-items {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-buttons .btn {
+        width: 100%;
+        max-width: 250px;
     }
     
     .skills-grid {
