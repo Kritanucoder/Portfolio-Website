@@ -124,16 +124,7 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
     });
 });
 
-// Achievement cards hover effect
-document.querySelectorAll('.achievement-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.boxShadow = '0 10px 30px rgba(37, 99, 235, 0.2)';
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
-    });
-});
+
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
@@ -165,6 +156,17 @@ window.addEventListener('scroll', () => {
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
+    });
+});
+
+// Achievement cards hover effect
+document.querySelectorAll('.achievement-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.boxShadow = '0 10px 30px rgba(37, 99, 235, 0.2)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
     });
 });
 
