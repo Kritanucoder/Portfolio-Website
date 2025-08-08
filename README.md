@@ -71,7 +71,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔗 Live Demo
 
-Visit the live website: [Portfolio Link]
+Visit the live website: [https://kritanucoder.github.io/Portfolio-Website/](https://kritanucoder.github.io/Portfolio-Website/)
 
 ---
 
