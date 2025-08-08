@@ -19,7 +19,7 @@ A modern, responsive portfolio website showcasing the academic and research jour
 - **Fonts**: Google Fonts (Inter)
 - **Deployment**: GitHub Pages ready
 
-## 📁 Project Structure
+## 📁 Website Structure
 
 ```
 ├── index.html          # Main HTML file
@@ -54,7 +54,7 @@ The website is fully responsive and tested across:
 ## 👥 Contributors
 
 - **Kritanu Chattopadhyay** - Portfolio Owner & Content
-- **[Your Name]** - Development & Implementation
+- **[Sujal Burnwal](https://github.com/sujal-ece28)** - Development & Implementation
 - **Amazon Q Developer** - AI Assistant for code generation and optimization
 
 ## 🤝 Development Approach
