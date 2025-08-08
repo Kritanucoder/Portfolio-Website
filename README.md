@@ -19,7 +19,7 @@ A modern, responsive portfolio website showcasing the academic and research jour
 - **Fonts**: Google Fonts (Inter)
 - **Deployment**: GitHub Pages ready
 
-## 📁 Project Structure
+## 📁 Website Structure
 
 ```
 ├── index.html          # Main HTML file
