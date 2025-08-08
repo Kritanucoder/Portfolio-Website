@@ -54,7 +54,7 @@ The website is fully responsive and tested across:
 ## 👥 Contributors
 
 - **Kritanu Chattopadhyay** - Portfolio Owner & Content
-- **[Sujal Burnwal](@sujal-ece28)** - Development & Implementation
+- **[Sujal Burnwal](sujal-ece28)** - Development & Implementation
 - **Amazon Q Developer** - AI Assistant for code generation and optimization
 
 ## 🤝 Development Approach
