@@ -65,9 +65,6 @@ This portfolio was built through a collaborative development process:
 - **Modern Web Practices**: Responsive design, accessibility, and performance optimization
 - **Iterative Development**: Continuous refinement based on feedback and requirements
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔗 Live Demo
 
