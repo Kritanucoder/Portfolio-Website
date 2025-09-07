@@ -1,0 +1,14 @@
+Research Institution Logos Folder
+
+Required logos for research experiences:
+- iit-patna.png (IIT Patna)
+- iit-madras.png (IIT Madras)
+- iit-delhi.png (IIT Delhi)
+- jadavpur-university.png (Jadavpur University)
+- nit-durgapur.png (NIT Durgapur)
+
+Logo specifications:
+- Size: 50x50px (will be auto-resized)
+- Format: PNG with transparent background preferred
+- Square or circular logos work best
+- Logos will gracefully hide if not found (onerror handler)

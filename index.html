@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kritanu Chattopadhyay - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 </head>
@@ -36,12 +36,12 @@
                 </svg>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="pages/research.html" class="nav-link">Research</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#extracurricular" class="nav-link">Extra-Curricular</a></li>
+                <li><a href="pages/extracurricular.html" class="nav-link">Extra-Curricular</a></li>
                 <li><a href="#interests" class="nav-link">Interests</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -68,7 +68,7 @@
                     <p class="hero-description">Passionate about medical robotics and AI‑driven solutions in neuroscience and oncology, with hands‑on research experience at premier institutes including Jadavpur University, IIT Patna, IIT Madras, and IIT Delhi.</p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">🚀 Get In Touch</a>
-                        <a href="Kritanu_Chattopadhyay_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">📄 View Resume</a>
+                        <a href="assets/documents/Kritanu_Chattopadhyay_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">📄 View Resume</a>
                     </div>
                     <div class="social-links">
                         <a href="mailto:kritanuchattopadhyaywork@gmail.com" class="social-link" aria-label="Email">
@@ -100,7 +100,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="profile-image-container">
-                        <img src="kritanu-chattopadhyay-pfp.jpeg" alt="Kritanu Chattopadhyay" class="profile-image">
+                        <img src="assets/images/profile/kritanu-chattopadhyay-pfp.jpeg" alt="Kritanu Chattopadhyay" class="profile-image">
                         <div class="image-border"></div>
                     </div>
                 </div>
@@ -139,84 +139,28 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <!-- Research Summary Section -->
+    <section id="research-summary" class="experience">
         <div class="container">
             <h2 class="section-title">🔬 Research Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Undergraduate Research Intern</h3>
-                        <h4>Indian Institute of Technology, Patna</h4>
-                        <p class="location">Department of Computer Science and Engineering, IITP • Remote</p>
-                        <ul>
-                            <li>Under the supervision of Prof. Sriparna Saha, guided by PhD Scholar Sofia Jamil.</li>
-                            <li>Summarizing Adverse Drug Effects in Cancer Treatments using Large Language Models and Reinforcement Learning.</li>
-                        </ul>
-                        <span class="timeline-date">July 2025 - Present</span>
+            <div class="research-summary">
+                <p>Extensive research experience across premier institutes including IIT Patna, IIT Madras, IIT Delhi, Jadavpur University, and NIT Durgapur. Working on cutting-edge projects in AI/ML, medical robotics, and precision agriculture.</p>
+                <div class="research-highlights">
+                    <div class="highlight-item">
+                        <h4>6+ Research Internships</h4>
+                        <p>At top-tier institutes</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Published Research</h4>
+                        <p>COMSYS 2025 (Warsaw, Poland)</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Diverse Domains</h4>
+                        <p>AI/ML, Robotics, Medical Tech</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Undergraduate Project Intern</h3>
-                        <h4>Autonomous Systems Laboratory, IIT Madras</h4>
-                        <p class="location">Department of Engineering Design, IITM • Chennai, Tamil Nadu, India</p>
-                        <ul>
-                            <li>Under the supervision of Prof. Bijo Sebastian, Prof. Sandipan Bandyopadhyay and Prof. G. Saravana Kumar.</li>
-                            <li>Utilized Altair MotionSolve to develop and validate dynamic simulations for a company-sponsored project, focusing on the performance analysis of a novel farm vehicle.</li>
-                        </ul>
-                        <span class="timeline-date">May 2025 – July 2025</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Undergraduate Research Intern</h3>
-                        <h4>Mechatronics Lab, IIT Delhi</h4>
-                        <p class="location">Remote</p>
-                        <ul>
-                            <li>Undergraduate Research Intern under the supervision of Professor Subir K. Saha.</li>
-                            <li>Currently utilizing Visual C# to develop and enhance the backend of RoboAnalyzer, a robotics analysis and visualization software.</li>
-                        </ul>
-                        <span class="timeline-date">Feb. 2025 – Present</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Undergraduate Research Intern</h3>
-                        <h4>CMATER Lab, Jadavpur University, Kolkata</h4>
-                        <p class="location">Remote</p>
-                        <ul>
-                            <li>Undergraduate Research Intern under the supervision of Professor Debotosh Bhattacharjee.</li>
-                            <li>Project II - Applying AI/ML methods to classify Cassava Leaf Diseases, supporting precision agriculture through automated disease detection.</li>
-                            <li>Project I – Formulated an ensemble-method approach to estimate SPAD (Soil Plant Analysis Development) values from rice leaf imagery as part of a precision agriculture study, with results documented in a research paper accepted to COMSYS 2025 (Warsaw, Poland).</li>
-                        </ul>
-                        <span class="timeline-date">Dec 2024 – Aug 2025</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Undergraduate Research Intern</h3>
-                        <h4>Robotics and Automation Laboratory, IIT Patna</h4>
-                        <p class="location">Bihta, Bihar, India</p>
-                        <ul>
-                            <li>Undergraduate Research Intern under the supervision of Professor Karali Patra, guided by PhD Scholar Surya Prakash Singh.</li>
-                            <li>Leveraged MATLAB and Python skills to develop the code of a transformation matrix between two given points on a free form surface to find the rotation angles and the translational matrix.</li>
-                        </ul>
-                        <span class="timeline-date">Dec 2024 – Jan 2025</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Undergraduate Research Intern</h3>
-                        <h4>National Institute of Technology Durgapur</h4>
-                        <p class="location">Durgapur, West Bengal, India</p>
-                        <ul>
-                            <li>Under the supervision of Prof. Nirmal Baran Hui (Department of Mechanical Engineering) where I am using MATLAB and Simulink to device a walking biped robot that can jump. It is a collaborative project with Mr. Debanuj Roy.</li>
-                            <li>Under the supervision of Prof. Aritro Dey (Department of Electrical Engineering) where I am developing a tracking sliding mode controller and apply the same in a UAV using MATLAB and Simulink. It is a collaborative project with Mr. Siddhartha Kundu.</li>
-                            <li>Under the supervision of Prof. Soumya Chatterjee (Department of Electrical Engineering), I am developing deepand transfer learning techniques for eye disease classification using PyTorch.</li>
-                        </ul>
-                        <span class="timeline-date">Jan 2025 - Present</span>
-                    </div>
+                <div class="cta-section">
+                    <a href="pages/research.html" class="btn btn-primary">🔬 View Detailed Research Experience</a>
                 </div>
             </div>
         </div>
@@ -231,22 +175,22 @@
                     <h3>Programming Languages</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="Python">
-                            <img src="icons/python.webp" alt="Python" width="40" height="40">
+                            <img src="assets/images/icons/python.webp" alt="Python" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="MATLAB">
-                            <img src="icons/matlab.png" alt="MATLAB" width="40" height="40">
+                            <img src="assets/images/icons/matlab.png" alt="MATLAB" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="C">
-                            <img src="icons/C.png" alt="C" width="40" height="40">
+                            <img src="assets/images/icons/C.png" alt="C" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="C#">
-                            <img src="icons/Csharp.png" alt="C#" width="40" height="40">
+                            <img src="assets/images/icons/Csharp.png" alt="C#" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="LaTeX">
-                            <img src="icons/latex.png" alt="LaTeX" width="40" height="40">
+                            <img src="assets/images/icons/latex.png" alt="LaTeX" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="C++">
-                            <img src="icons/c++.png" alt="C++" width="40" height="40">
+                            <img src="assets/images/icons/c++.png" alt="C++" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -254,19 +198,19 @@
                     <h3>AI/ML Frameworks</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="PyTorch">
-                            <img src="icons/pytorch.png" alt="PyTorch" width="40" height="40">
+                            <img src="assets/images/icons/pytorch.png" alt="PyTorch" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="TensorFlow">
-                            <img src="icons/tensor.png" alt="TensorFlow" width="40" height="40">
+                            <img src="assets/images/icons/tensor.png" alt="TensorFlow" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Scikit-Learn">
-                            <img src="icons/scikitlearn.png" alt="Scikit-Learn" width="40" height="40">
+                            <img src="assets/images/icons/scikitlearn.png" alt="Scikit-Learn" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="MediaPipe">
-                            <img src="icons/mediapipe.png" alt="MediaPipe" width="40" height="40">
+                            <img src="assets/images/icons/mediapipe.png" alt="MediaPipe" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Streamlit">
-                            <img src="icons/streamlit.png" alt="Streamlit" width="40" height="40">
+                            <img src="assets/images/icons/streamlit.png" alt="Streamlit" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -274,31 +218,31 @@
                     <h3>Libraries & Tools</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="Pandas">
-                            <img src="icons/pandas.png" alt="Pandas" width="40" height="40">
+                            <img src="assets/images/icons/pandas.png" alt="Pandas" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="NumPy">
-                            <img src="icons/numpy.png" alt="NumPy" width="40" height="40">
+                            <img src="assets/images/icons/numpy.png" alt="NumPy" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="OpenCV">
-                            <img src="icons/opencv.png" alt="OpenCV" width="40" height="40">
+                            <img src="assets/images/icons/opencv.png" alt="OpenCV" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Matplotlib">
-                            <img src="icons/matplotlib.png" alt="Matplotlib" width="40" height="40">
+                            <img src="assets/images/icons/matplotlib.png" alt="Matplotlib" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Seaborn">
-                            <img src="icons/seaborn.svg" alt="Seaborn" width="40" height="40">
+                            <img src="assets/images/icons/seaborn.svg" alt="Seaborn" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="OpenTK">
-                            <img src="icons/opentk.png" alt="OpenTK" width="40" height="40">
+                            <img src="assets/images/icons/opentk.png" alt="OpenTK" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="HelixToolkit3D">
-                            <img src="icons/helixtoolkit3d.png" alt="HelixToolkit3D" width="40" height="40">
+                            <img src="assets/images/icons/helixtoolkit3d.png" alt="HelixToolkit3D" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Tableau">
-                            <img src="icons/tableau.png" alt="Tableau" width="40" height="40">
+                            <img src="assets/images/icons/tableau.png" alt="Tableau" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="MySQL">
-                            <img src="icons/mysql.png" alt="MySQL" width="40" height="40">
+                            <img src="assets/images/icons/mysql.png" alt="MySQL" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -306,28 +250,28 @@
                     <h3>CAD & Simulation</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="SolidWorks">
-                            <img src="icons/solidworks.jpeg" alt="SolidWorks" width="40" height="40">
+                            <img src="assets/images/icons/solidworks.jpeg" alt="SolidWorks" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="ANSYS">
-                            <img src="icons/anasys.png" alt="ANSYS" width="40" height="40">
+                            <img src="assets/images/icons/anasys.png" alt="ANSYS" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Altair Suite">
-                            <img src="icons/altair.png" alt="Altair Suite" width="40" height="40">
+                            <img src="assets/images/icons/altair.png" alt="Altair Suite" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="CATIA V5">
-                            <img src="icons/DS-CATIA-Logo.png" alt="CATIA V5" width="40" height="40">
+                            <img src="assets/images/icons/DS-CATIA-Logo.png" alt="CATIA V5" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Fusion360">
-                            <img src="icons/fusion360.png" alt="Fusion360" width="40" height="40">
+                            <img src="assets/images/icons/fusion360.png" alt="Fusion360" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="ROS2 Humble">
-                            <img src="icons/ros2_humble.png" alt="ROS2 Humble" width="40" height="40">
+                            <img src="assets/images/icons/ros2_humble.png" alt="ROS2 Humble" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Mechanalyzer">
-                            <img src="icons/mechanalyzer.png" alt="Mechanalyzer" width="40" height="40">
+                            <img src="assets/images/icons/mechanalyzer.png" alt="Mechanalyzer" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Roboanalyzer">
-                            <img src="icons/roboanalyzer.png" alt="Roboanalyzer" width="40" height="40">
+                            <img src="assets/images/icons/roboanalyzer.png" alt="Roboanalyzer" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -335,10 +279,10 @@
                     <h3>Hardware</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="Arduino">
-                            <img src="icons/arduino.webp" alt="Arduino" width="40" height="40">
+                            <img src="assets/images/icons/arduino.webp" alt="Arduino" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="ESP32">
-                            <img src="icons/esp32.png" alt="ESP32" width="40" height="40">
+                            <img src="assets/images/icons/esp32.png" alt="ESP32" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -346,13 +290,13 @@
                     <h3>Mathematics</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="Linear Algebra">
-                            <img src="icons/linearalgebra.jpeg" alt="Linear Algebra" width="40" height="40">
+                            <img src="assets/images/icons/linearalgebra.jpeg" alt="Linear Algebra" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Statistics">
-                            <img src="icons/statistics.jpg" alt="Statistics" width="40" height="40">
+                            <img src="assets/images/icons/statistics.jpg" alt="Statistics" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="Calculus">
-                            <img src="icons/calculus.png" alt="Calculus" width="40" height="40">
+                            <img src="assets/images/icons/calculus.png" alt="Calculus" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -360,13 +304,13 @@
                     <h3>Microsoft Tools</h3>
                     <div class="skill-icons">
                         <div class="skill-icon" title="MS PowerPoint">
-                            <img src="icons/ms_ppt.png" alt="MS PowerPoint" width="40" height="40">
+                            <img src="assets/images/icons/ms_ppt.png" alt="MS PowerPoint" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="MS Excel">
-                            <img src="icons/ms_excel.jpeg" alt="MS Excel" width="40" height="40">
+                            <img src="assets/images/icons/ms_excel.jpeg" alt="MS Excel" width="40" height="40">
                         </div>
                         <div class="skill-icon" title="MS Word">
-                            <img src="icons/ms_word.webp" alt="MS Word" width="40" height="40">
+                            <img src="assets/images/icons/ms_word.webp" alt="MS Word" width="40" height="40">
                         </div>
                     </div>
                 </div>
@@ -403,103 +347,28 @@
         </div>
     </section>
 
-    <!-- Extra-Curricular Section -->
-    <section id="extracurricular" class="experience">
+    <!-- Extra-Curricular Summary Section -->
+    <section id="extracurricular-summary" class="experience">
         <div class="container">
             <h2 class="section-title">🎭 Extra-Curricular Activities</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Senior Coordinator</h3>
-                        <h4>Society of Automotive Engineers Collegiate Club</h4>
-                        <p class="location">On-site</p>
-                        <ul>
-                            <li>Domain - Robotics, Machine Learning and Automobiles.</li>
-                            <li>Introduced the weekly F1 Magazine - Through the Formula Lens as a part of SAE.</li>
-                            <li>Organized the Aarohan as a member of Team Aavishkar.</li>
-                        </ul>
-                        <span class="timeline-date">May 2025 - Present</span>
+            <div class="extracurricular-summary">
+                <p>Active involvement in technical societies, robotics teams, and social initiatives. Leadership roles in SAE, MESA, and various student organizations at NIT Durgapur.</p>
+                <div class="extracurricular-highlights">
+                    <div class="highlight-item">
+                        <h4>8+ Leadership Roles</h4>
+                        <p>In technical societies</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Team NDORS</h4>
+                        <p>BAJA SAE Competition Team</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Social Impact</h4>
+                        <p>Fundraising & Content Creation</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Senior Coordinator</h3>
-                        <h4>Mechanical Engineers' Student Association, NIT Durgapur</h4>
-                        <p class="location">On-site</p>
-                        <ul>
-                            <li>Organised the CADathon - a hackathon aimed at promoting CAD designing through the institute.</li>
-                        </ul>
-                        <span class="timeline-date">March 2025 - Present</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Student Volunteer</h3>
-                        <h4>Innovation and Incubation Cell, NIT Durgapur</h4>
-                        <p class="location">On-site</p>
-                        <ul>
-                            <li>Actively involved in producing curated content for the website of IIC NIT Durgapur.</li>
-                            <li>Member of the official Content Wing of IIC NIT Durgapur.</li>
-                            <li>Team Member of AI2Summit Team and the IIC Chronicles.</li>
-                        </ul>
-                        <span class="timeline-date">Feb 2025 - Present</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Senior Member</h3>
-                        <h4>Team NDORS, NIT Durgapur</h4>
-                        <p class="location">On-site</p>
-                        <ul>
-                            <li>Member of the BAJA SAE NIT Durgapur Team NDORS.</li>
-                            <li>Involved in the Computer Aided Engineering and Steering System team of Team NDORS.</li>
-                        </ul>
-                        <span class="timeline-date">Jun 2025 - Present</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Senior Member</h3>
-                        <h4>Aerial Robotics Research Group, NIT Durgapur</h4>
-                        <p class="location">On-site</p>
-                        <ul>
-                            <li>Involved in the team AI/ML, Microcontroller and CAD Design tracks.</li>
-                        </ul>
-                        <span class="timeline-date">Jun 2025 - Present</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Fundraising Intern</h3>
-                        <h4>NayePankh Foundation</h4>
-                        <p class="location">Remote</p>
-                        <ul>
-                            <li>Raised INR 5001 for the cause of providing sustainable education to the underprivileged children.</li>
-                        </ul>
-                        <span class="timeline-date">Aug 2024</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Campus Ambassador</h3>
-                        <h4>Rendezvous, IIT Delhi</h4>
-                        <p class="location">Remote</p>
-                        <ul>
-                            <li>Promoted the fest and their sponsors within the institute.</li>
-                        </ul>
-                        <span class="timeline-date">Aug 2024 - September 2024</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Content Writer</h3>
-                        <h4>Earth5R</h4>
-                        <p class="location">Remote</p>
-                        <ul>
-                            <li>Wrote multiple articles promoting environmental awareness.</li>
-                        </ul>
-                        <span class="timeline-date">Aug 2024 - Dec 2024</span>
-                    </div>
+                <div class="cta-section">
+                    <a href="pages/extracurricular.html" class="btn btn-primary">🎭 View All Activities</a>
                 </div>
             </div>
         </div>
@@ -607,6 +476,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

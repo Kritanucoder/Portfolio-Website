@@ -6,9 +6,11 @@ A modern, responsive portfolio website showcasing the academic and research jour
 
 - **Responsive Design**: Optimized for all devices and screen sizes
 - **Modern UI/UX**: Clean, professional design with smooth animations
+- **Multi-Page Structure**: Organized content across dedicated pages
 - **Interactive Elements**: Hover effects, smooth scrolling, and dynamic content
 - **Skills Showcase**: Comprehensive display of technical skills with icons
-- **Research Timeline**: Detailed experience and project timeline
+- **Research Timeline**: Detailed experience and project timeline on dedicated page
+- **Extra-Curricular Activities**: Separate page for leadership roles and activities
 - **Contact Integration**: Direct links to social media and communication channels
 
 ## 🛠️ Technologies Used
@@ -22,12 +24,20 @@ A modern, responsive portfolio website showcasing the academic and research jour
 ## 📁 Website Structure
 
 ```
-├── index.html          # Main HTML file
-├── styles.css          # Main stylesheet
-├── script.js           # JavaScript functionality
-├── icons/              # Skill and technology icons
-├── *.pdf              # Resume files
-└── *.jpeg             # Profile images
+├── index.html          # Main homepage
+├── assets/
+│   ├── css/
+│   │   └── styles.css  # Main stylesheet
+│   ├── js/
+│   │   └── script.js   # JavaScript functionality
+│   ├── images/
+│   │   ├── profile/    # Profile images
+│   │   └── icons/      # Skill and technology icons
+│   └── documents/      # Resume and other documents
+├── pages/
+│   ├── research.html   # Detailed research experience
+│   └── extracurricular.html # Extra-curricular activities
+└── README.md
 ```
 
 ## 🚀 Getting Started
