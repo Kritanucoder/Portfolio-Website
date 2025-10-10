@@ -1067,6 +1067,77 @@ body {
     color: #4b5563;
 }
 
+.research-interests-box {
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.research-interests-box h4 {
+    color: #2563eb;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.research-interest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.research-interest-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.research-bullet {
+    width: 6px;
+    height: 6px;
+    background: #2563eb;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.6rem;
+}
+
+.research-interest-point span:last-child {
+    color: #4b5563;
+}
+
+.research-link-small {
+    text-align: center;
+    padding: 0.8rem;
+    background: rgba(37, 99, 235, 0.05);
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.research-link-small p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.research-link-small a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.research-link-small a:hover {
+    text-decoration: underline;
+}
+
 .research-quote {
     font-style: italic;
     font-weight: 400;
